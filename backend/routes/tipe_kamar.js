@@ -1,4 +1,3 @@
-//import express
 const express = require("express");
 const app = express();
 app.use(express.json());
@@ -6,18 +5,15 @@ app.use(express.json());
 const cors = require("cors");
 app.use(cors());
 
-//import multer
 const multer = require("multer");
 const path = require("path");
 const fs = require("fs");
 
 const { Op } = require("sequelize");
 
-//import model
 const models = require("../models/index");
 const tipe_kamar = models.tipe_kamar;
 
-//config storage image
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
     cb(null, "../backend/image/tipe_kamar");
@@ -28,66 +24,10 @@ const storage = multer.diskStorage({
 });
 let upload = multer({ storage: storage });
 
-//import auth
 const auth = require("../auth");
 const jwt = require("jsonwebtoken");
 const SECRET_KEY = "TryMe";
 
-//get data
-app.get("/", auth, (req, res) => {
-  tipe_kamar
-    .findAll()
-    .then((result) => {
-      res.json({
-        tipe_kamar: result,
-      });
-    })
-    .catch((error) => {
-      res.json({
-        message: error.message,
-      });
-    });
-});
-
-//get data by id
-app.get("/:id", auth, (req, res) => {
-  tipe_kamar
-    .findOne({ where: { id_tipe_kamar: req.params.id } })
-    .then((result) => {
-      res.json({
-        kamar: result,
-      });
-    })
-    .catch((error) => {
-      res.json({
-        message: error.message,
-      });
-    });
-});
-
-//search data by tipe_kamar
-app.post("/search", auth, (req, res) => {
-  tipe_kamar
-    .findAll({
-      where: {
-        [Op.or]: [
-          { nama_tipe_kamar: { [Op.like]: "%" + req.body.nama_tipe_kamar + "%" } },
-        ],
-      },
-    })
-    .then((result) => {
-      res.json({
-        tipe_kamar: result,
-      });
-    })
-    .catch((error) => {
-      res.json({
-        message: error.message,
-      });
-    });
-});
-
-//post data
 app.post("/", upload.single("foto"), auth, (req, res) => {
   if (!req.file) {
     res.json({
@@ -115,7 +55,36 @@ app.post("/", upload.single("foto"), auth, (req, res) => {
   }
 });
 
-//edit data by id
+app.get("/", auth, (req, res) => {
+  tipe_kamar
+    .findAll()
+    .then((result) => {
+      res.json({
+        tipe_kamar: result,
+      });
+    })
+    .catch((error) => {
+      res.json({
+        message: error.message,
+      });
+    });
+});
+
+app.get("/:id", auth, (req, res) => {
+  tipe_kamar
+    .findOne({ where: { id_tipe_kamar: req.params.id } })
+    .then((result) => {
+      res.json({
+        kamar: result,
+      });
+    })
+    .catch((error) => {
+      res.json({
+        message: error.message,
+      });
+    });
+});
+
 app.put("/:id", upload.single("foto"), auth, (req, res) => {
   let param = { id_tipe_kamar: req.params.id };
   let data = {
@@ -160,7 +129,6 @@ app.put("/:id", upload.single("foto"), auth, (req, res) => {
     });
 });
 
-//delete data by id
 app.delete("/:id", auth, (req, res) => {
   let param = {
     id_tipe_kamar: req.params.id,
@@ -170,6 +138,27 @@ app.delete("/:id", auth, (req, res) => {
     .then((result) => {
       res.json({
         message: "data has been deleted",
+      });
+    })
+    .catch((error) => {
+      res.json({
+        message: error.message,
+      });
+    });
+});
+
+app.post("/search", auth, (req, res) => {
+  tipe_kamar
+    .findAll({
+      where: {
+        [Op.or]: [
+          { nama_tipe_kamar: { [Op.like]: "%" + req.body.nama_tipe_kamar + "%" } },
+        ],
+      },
+    })
+    .then((result) => {
+      res.json({
+        tipe_kamar: result,
       });
     })
     .catch((error) => {

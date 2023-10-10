@@ -1,25 +1,20 @@
-//import library
 const express = require('express');
 const bodyParser = require('body-parser');
 
-//implementasi library
 const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
 const { Op } = require("sequelize")
 
-//import model
 const model = require('../models/index');
 const kamar = model.kamar
 const tipe_kamar = model.tipe_kamar
 
-//import auth
 const auth = require("../auth")
 const jwt = require("jsonwebtoken")
 const SECRET_KEY = "TryMe"
 
-//get data
 app.get("/", auth, (req,res) => {
     kamar.findAll({include: [{model: tipe_kamar, as:'tipe_kamar'}]})
         .then(result => {
@@ -34,7 +29,6 @@ app.get("/", auth, (req,res) => {
         })
 })
 
-//get data by id
 app.get("/:id", auth, (req, res) =>{
     kamar.findOne({ where: {id_kamar: req.params.id}})
     .then(result => {
@@ -49,7 +43,6 @@ app.get("/:id", auth, (req, res) =>{
     })
 })
 
-//search data by nomor_kamar
 app.post("/search", auth, (req, res) => {
     kamar
       .findAll({
@@ -72,7 +65,6 @@ app.post("/search", auth, (req, res) => {
       });
   });
 
-//post data
 app.post("/", auth, (req,res) => {
     let data = {
         nomor_kamar : req.body.nomor_kamar,
@@ -92,7 +84,6 @@ app.post("/", auth, (req,res) => {
         })
 })
 
-//edit data by id
 app.put("/:id", auth, (req,res) => {
     let param = {
         id_kamar : req.params.id
@@ -114,7 +105,6 @@ app.put("/:id", auth, (req,res) => {
         })
 })
 
-//delete data by id
 app.delete("/:id", auth, (req,res) => {
     let param = {
         id_kamar : req.params.id

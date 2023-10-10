@@ -1,21 +1,16 @@
-//import express
 const express = require("express")
 const app = express()
 app.use(express.json())
 
-// import md5
 const md5 = require("md5")
 
-//import multer
 const multer = require("multer")
 const path = require("path")
 const fs = require("fs")
 
-//import model
 const models = require("../models/index")
 const customer = models.customer
 
-//config storage image
 const storage = multer.diskStorage({
     destination:(req,file,cb) => {
         cb(null,"../backend/image/customer")
@@ -26,12 +21,10 @@ const storage = multer.diskStorage({
 })
 let upload = multer({storage: storage})
 
-//import auth
 const auth = require("../auth")
 const jwt = require("jsonwebtoken")
 const SECRET_KEY = "TryMe"
 
-//login
 app.post("/auth", async (req,res) => {
     let data= {
         email: req.body.email,
@@ -56,7 +49,6 @@ app.post("/auth", async (req,res) => {
     }
 })
 
-//get data
 app.get("/", auth, (req,res) => {
     customer.findAll()
         .then(result => {
@@ -71,7 +63,6 @@ app.get("/", auth, (req,res) => {
         })
 })
 
-//post data
 app.post("/", upload.single("foto"),  (req, res) =>{
     if (!req.file) {
         res.json({
@@ -98,7 +89,6 @@ app.post("/", upload.single("foto"),  (req, res) =>{
     }
 })
 
-//edit data by id
 app.put("/:id", upload.single("foto"), auth, (req, res) =>{
     let param = { id_customer: req.params.id}
     let data = {
@@ -107,12 +97,10 @@ app.put("/:id", upload.single("foto"), auth, (req, res) =>{
         password : md5(req.body.password),
     }
     if (req.file) {
-        // get data by id
         const row = customer.findOne({where: param})
         .then(result => {
             let oldFileName = result.image
            
-            // delete old file
             let dir = path.join(__dirname,"../backend/image/customer",oldFileName)
             fs.unlink(dir, err => console.log(err))
         })
@@ -120,7 +108,6 @@ app.put("/:id", upload.single("foto"), auth, (req, res) =>{
             console.log(error.message);
         })
 
-        // set new filename
         data.image = req.file.filename
     }
 
@@ -141,7 +128,6 @@ app.put("/:id", upload.single("foto"), auth, (req, res) =>{
         })
 })
 
-//delete data by id
 app.delete("/:id",  (req,res) => {
     let param = {
         id_customer : req.params.id

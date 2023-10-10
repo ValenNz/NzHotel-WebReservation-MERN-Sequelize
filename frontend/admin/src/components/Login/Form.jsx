@@ -106,7 +106,7 @@ const Form = () => {
           </button>
         </form>
 
-        <p className='text-gray mt-24'>© Hotelmu 2023 - All Rights Reserved</p>
+        <p className='text-gray mt-24'>© Nebula Zing2023 - All Rights Reserved</p>
       </div>
     </div>
   );

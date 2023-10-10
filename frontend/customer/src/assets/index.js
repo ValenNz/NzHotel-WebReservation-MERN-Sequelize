@@ -1,6 +1,6 @@
 import hero from "./hero.png";
 import close from './close.svg'
-import logo from './logo.svg'
+import logo from './logo.png'
 import menu from './menu.svg'
 import help from './help.svg'
 import language from './language.svg'
@@ -35,7 +35,6 @@ import bedDetailKamar1 from './bedDetailKamar1.svg'
 import bedDetailKamar2 from './bedDetailKamar2.svg'
 import illusSearch from './illusSearch.svg'
 import email from './email.svg'
-
 export {
   hero, close, logo, menu, help, language, location, menu2, close2, bed, arrowRight, search, kamar, arrowLeftRekomendasi, arrowRightRekomendasi, capacity, tipe, alasanLogo1, alasanLogo2, alasanLogo3, logoRekan1, logoRekan2, logoRekan3,logoRekan4, logoRekan5, loginImage, personRiwayat, durationRiwayat, capacityRiwayat, dateRiwayat, room1, room2, personDetailKamar, bedDetailKamar1, bedDetailKamar2, illusSearch, email
 };

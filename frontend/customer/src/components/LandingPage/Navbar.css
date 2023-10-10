@@ -1,0 +1,13 @@
+/* Navbar.css */
+
+/* Tambahkan gaya untuk efek scroll */
+.navbar {
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar.scrolled {
+    background-color: rgba(255, 255, 255, 0.9); /* Ganti dengan warna latar belakang yang Anda inginkan saat scroll */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ganti dengan bayangan yang Anda inginkan saat scroll */
+    /* Tambahkan gaya lain sesuai kebutuhan Anda */
+  }
+  

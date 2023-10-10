@@ -1,6 +1,6 @@
 import hero from "./hero.png";
 import close from './close.svg'
-import logo from './logo.svg'
+import logo from './logo.png'
 import menu from './menu.svg'
 import help from './help.svg'
 import language from './language.svg'

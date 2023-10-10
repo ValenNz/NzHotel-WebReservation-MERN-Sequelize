@@ -17,14 +17,14 @@ const Sidebar = () => {
     <div className={`h-screen flex overflow-hidden bg-gray-100 border-r-2 ${toggle ? 'sidebar-open' : ''}`}>
       {/* Sidebar */}
       <div className="bg-white shadow-xl sidebar w-full">
-        <div className=" pt-2 pb-3 space-y-1">
-          <img src={logo} alt="hoobank" className="w-[160px] h-[52px] my-10 mx-3" />
+        <div className=" pt-2 pb-3 space-y-1 ">
+          <img src={logo} alt="hoobank" className="w-[160px] h-[160px] mx-auto " />
 
           {navLinks.map((nav, index) => (
             <Link
               key={nav.id}
               to={nav.to}
-              className={`block px-3 py-5 rounded-md text-xl  font-medium text-gray-700 hover:text-gray-900 hover:bg-[#faa83586] ${
+              className={`block px-3 py-5 rounded-md text-xl  font-medium text-gray-400 hover:text-gray-900 hover:bg-[#faa83586] ${
                 sessionStorage.getItem('role') === 'resepsionis' ? 'hidden' : ''
               }`}
             >

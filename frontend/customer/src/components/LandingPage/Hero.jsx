@@ -9,10 +9,9 @@ const Hero = () => {
       </div>
       <div className="absolute top-0 flex flex-col items-start justify-center w-full h-full px-6 xl:px-80">
         <h2 className="text-lg font-bold text-white md:text-4xl xl:text-6xl">
-          Temukan Penginapan
-        </h2>
+          Traveling opens the door to creating        </h2>
         <h2 className="text-lg font-bold text-white md:text-4xl xl:text-6xl">
-          Sesuai Dengan Kriteriamu !
+          Memories
         </h2>
       </div>
     </div>

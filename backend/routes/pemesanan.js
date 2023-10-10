@@ -1,15 +1,12 @@
-//import library
 const express = require("express");
 const bodyParser = require("body-parser");
 
-//implementasi library
 const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 const { Op } = require("sequelize");
 
-//import model
 const model = require("../models/index");
 const pemesanan = model.pemesanan;
 const user = model.user;
@@ -18,7 +15,6 @@ const tipe_kamar = model.tipe_kamar;
 const detail_pemesanan = model.detail_pemesanan;
 const customer = model.customer;
 
-//import auth
 const auth = require("../auth");
 const jwt = require("jsonwebtoken");
 const SECRET_KEY = "TryMe";
@@ -26,7 +22,6 @@ const SECRET_KEY = "TryMe";
 const sequelize = require(`sequelize`);
 const operator = sequelize.Op;
 
-//get data
 app.get("/", auth, (req, res) => {
   pemesanan
     .findAll({
@@ -88,7 +83,6 @@ app.get("/findById/:id", auth, (req, res) => {
     });
 });
 
-//get data by id
 app.get("/:id", auth, async (req, res) => {
   let sql = `select tipe_kamar.*, customer.*,kamar.* ,detail_pemesanan.*,pemesanan.*  from pemesanan inner join detail_pemesanan on pemesanan.id_pemesanan = detail_pemesanan.id_pemesanan join kamar on kamar.id_kamar = detail_pemesanan.id_kamar join customer on customer.id_customer = pemesanan.id_customer join tipe_kamar on tipe_kamar.id_tipe_kamar = pemesanan.id_tipe_kamar WHERE pemesanan.id_pemesanan  = ${req.params.id}`;
 
@@ -103,7 +97,6 @@ app.get("/:id", auth, async (req, res) => {
   }
 });
 
-//get order detail by order
 app.get("/idOrder/:id_pemesanan", auth, async (req, res) => {
   let sql = `select * from pemesanan inner join detail_pemesanan on pemesanan.id_pemesanan = detail_pemesanan.id_pemesanan join kamar on kamar.id_kamar = detail_pemesanan.id_kamar WHERE pemesanan.id_pemesanan  = ${req.params.id_pemesanan}`;
 
@@ -151,7 +144,6 @@ app.post("/findByNamaTamu", auth, (req, res) => {
     });
 });
 
-//post data
 app.post("/search", auth, (req, res) => {
   const tgl_check_in = new Date(req.body.tgl_check_in);
   pemesanan
@@ -315,7 +307,6 @@ app.put("/:id", auth, (req, res) => {
     status_pemesanan: req.body.status_pemesanan,
   };
 
-  // Lakukan validasi status di sini
   pemesanan
     .findOne({ where: param })
     .then((pemesanan) => {
@@ -359,7 +350,6 @@ app.put("/:id", auth, (req, res) => {
     });
 });
 
-//delete data by id
 app.delete("/:id", auth, (req, res) => {
   let param = {
     id_pemesanan: req.params.id,
