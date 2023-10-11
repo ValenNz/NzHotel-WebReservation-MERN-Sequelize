@@ -56,17 +56,18 @@ Sebelum Anda memulai pengembangan atau penggunaan aplikasi ini, pastikan Anda te
     npm run dev
 Aplikasi akan berjalan di http://localhost:3000.
 
-Kontribusi
+## Kontribusi
 Kami sangat menghargai kontribusi dari komunitas. Jika Anda ingin berkontribusi pada proyek ini, silakan ikuti langkah-langkah berikut:
 
-Fork repositori ini.
-Buat branch fitur atau perbaikan Anda: git checkout -b fitur-anda.
-Commit perubahan Anda: git commit -m 'Menambahkan fitur baru'.
-Push ke branch Anda: git push origin fitur-anda.
-Buat permintaan tarik (Pull Request) ke repositori utama.
-Lisensi
+## Fork repositori ini.
+- Buat branch fitur atau perbaikan Anda: git checkout -b fitur-anda.
+- Commit perubahan Anda: git commit -m 'Menambahkan fitur baru'.
+- Push ke branch Anda: git push origin fitur-anda.
+- Buat permintaan tarik (Pull Request) ke repositori utama.
+  
+## Lisensi
 Proyek ini dilisensikan di bawah Lisensi MIT. Lihat file LISENSI untuk informasi lebih lanjut.
 
-Terima kasih telah menggunakan NzHotel Web Reservation! Kami berharap Anda menemukan aplikasi ini berguna. Jika Anda memiliki pertanyaan atau masalah, jangan ragu untuk menghubungi kami atau laporkan masalah.
+# Terima kasih telah menggunakan NzHotel Web Reservation! Kami berharap Anda menemukan aplikasi ini berguna. Jika Anda memiliki pertanyaan atau masalah, jangan ragu untuk menghubungi kami atau laporkan masalah.
 
 Pastikan untuk menggantikan "username" dengan nama pengguna GitHub Anda dan menambahkan tautan kontak Anda jika perlu. Selain itu, pastikan untuk menyertakan panduan instalasi yang jelas dan panduan kontribusi yang ramah. Selamat berkontribusi dan mengembangkan proyek Anda!
