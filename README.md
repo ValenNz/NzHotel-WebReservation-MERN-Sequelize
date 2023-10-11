@@ -1,8 +1,8 @@
 <h1 align="center">Preview Project</h1>
 
   ![Beranda](https://github.com/ValenNz/NzHotel-WebReservation-MERN-Sequelize/assets/92833376/3672edab-9db0-4896-972e-5cdf04ba3d96)
-  <p align="center">
-    <a href="https://drive.google.com/folderview?id=1P4tu4G5NDYuhfhLdXR0bqn9BPBCAJ2BA&usp=drive_web">Preview Project In Google Drive</a>
+  <p align="center" >
+    <a href="https://drive.google.com/folderview?id=1P4tu4G5NDYuhfhLdXR0bqn9BPBCAJ2BA&usp=drive_web"><span style="color: #faa935;">Tautan ke Folder di Google Drive</span></a>
   </p>
 
 <h1 align="center">NzHotel Web Reservation (MERN & Sequelize)</h1>
