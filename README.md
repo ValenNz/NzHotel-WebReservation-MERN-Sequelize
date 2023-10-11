@@ -1,5 +1,6 @@
 <p align="center">
-  <img src="link_gambar_aplikasi.png" alt="Tampilan Aplikasi">
+  <img src="![Beranda](https://github.com/ValenNz/NzHotel-WebReservation-MERN-Sequelize/assets/92833376/7a47323f-0bed-4f19-9318-0863e80207a4)" alt="Tampilan Beranda Costumer">
+
 </p>
 
 <h1 align="center">NzHotel Web Reservation (MERN & Sequelize)</h1>
