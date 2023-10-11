@@ -74,12 +74,6 @@ Aplikasi akan berjalan di http://localhost:3000.
 ## 👥 Kontribusi
 Kami sangat menghargai kontribusi dari komunitas. Jika Anda ingin berkontribusi pada proyek ini, silakan ikuti langkah-langkah berikut:
 
-<p align="center">
-  <a href="https://github.com/username/NzHotel-WebReservation-MERN-Sequelize/fork">
-    <img src="https://img.shields.io/github/forks/username/NzHotel-WebReservation-MERN-Sequelize" alt="Forks">
-  </a>
-</p>
-
 ## Fork repositori ini.
 - Buat branch fitur atau perbaikan Anda: git checkout -b fitur-anda.
 - Commit perubahan Anda: git commit -m 'Menambahkan fitur baru'.
