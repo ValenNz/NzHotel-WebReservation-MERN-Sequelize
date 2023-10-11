@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="![Beranda](https://github.com/ValenNz/NzHotel-WebReservation-MERN-Sequelize/assets/92833376/7a47323f-0bed-4f19-9318-0863e80207a4)" alt="Tampilan Beranda Costumer">
+  <img src="![Beranda](https://github.com/ValenNz/NzHotel-WebReservation-MERN-Sequelize/assets/92833376/8105865a-eb61-4b0c-94a7-08874084326d)" alt="Tampilan Beranda Costumer">
 
 </p>
 
