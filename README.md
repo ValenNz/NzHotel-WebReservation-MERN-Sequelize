@@ -31,36 +31,47 @@ Sebelum Anda memulai pengembangan atau penggunaan aplikasi ini, pastikan Anda te
 
    ```bash
    git clone https://github.com/username/NzHotel-WebReservation-MERN-Sequelize.git
-
+   
 2. Pindah ke direktori proyek:
+   
    ```bash
    cd NzHotel-WebReservation-MERN-Sequelize
+   
 3. Instal dependensi server:
+   
    ```bash
    cd server
    npm install
+   
 4. Instal dependensi client:
+   
    ```bash
    cd client
    npm install
+   
 5. Konfigurasi basis data:
+   
    Salin contoh file konfigurasi basis data:
    ```bash
    cd server
    cp config.example.js config.js
   Isi informasi basis data Anda di config.js.
-6. Inisialisasi basis data dan jalankan migras
+  
+7. Inisialisasi basis data dan jalankan migras
+   
     ```bash
     cd server
     npm run sequelize
 
-7. Kembali ke direktori akar proyek dan jalankan server dan client:
+8. Kembali ke direktori akar proyek dan jalankan server dan client:
+   
     ```bash
     Copy code
     npm run dev
+    
 Aplikasi akan berjalan di http://localhost:3000.
 
-## Kontribusi
+👥 Kontribusi
 Kami sangat menghargai kontribusi dari komunitas. Jika Anda ingin berkontribusi pada proyek ini, silakan ikuti langkah-langkah berikut:
 
 ## Fork repositori ini.
@@ -69,7 +80,7 @@ Kami sangat menghargai kontribusi dari komunitas. Jika Anda ingin berkontribusi 
 - Push ke branch Anda: git push origin fitur-anda.
 - Buat permintaan tarik (Pull Request) ke repositori utama.
   
-## Lisensi
+📜 Lisensi
 Proyek ini dilisensikan di bawah Lisensi MIT. Lihat file LISENSI untuk informasi lebih lanjut.
 
 Terima kasih telah menggunakan NzHotel Web Reservation! Kami berharap Anda menemukan aplikasi ini berguna. Jika Anda memiliki pertanyaan atau masalah, jangan ragu untuk menghubungi kami atau laporkan masalah.
