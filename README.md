@@ -1,33 +1,37 @@
-# NzHotel Web Reservation (MERN & Sequelize)
+<p align="center">
+  <img src="link_gambar_aplikasi.png" alt="Tampilan Aplikasi">
+</p>
+
+<h1 align="center">NzHotel Web Reservation (MERN & Sequelize)</h1>
 
 Selamat datang di proyek **NzHotel Web Reservation**! Proyek ini adalah aplikasi web reservasi hotel yang dibangun menggunakan teknologi MERN (MongoDB, Express, React, Node.js) serta Sequelize sebagai ORM (Object-Relational Mapping). Aplikasi ini memungkinkan pengguna untuk mencari, memilih, dan memesan kamar hotel dengan mudah.
 
-![Tampilan Aplikasi](link_gambar_aplikasi.png)
+## 🚀 Fitur Utama
 
-## Fitur Utama
+- 🏨 Pencarian dan filter kamar hotel
+- 🌟 Lihat detail kamar termasuk fasilitas dan harga
+- 🛏️ Proses reservasi kamar dengan langkah-langkah yang mudah
+- 🗄️ Manajemen reservasi dan histori pesanan
+- 🔐 Otentikasi pengguna
+- 👑 Administrasi kamar oleh admin
+- 💳 Penanganan pembayaran (opsional)
 
-- Pencarian dan filter kamar hotel
-- Lihat detail kamar termasuk fasilitas dan harga
-- Proses reservasi kamar dengan langkah-langkah yang mudah
-- Manajemen reservasi dan histori pesanan
-- Otentikasi pengguna
-- Administrasi kamar oleh admin
-- Penanganan pembayaran (opsional)
-
-## Persyaratan
+## ⚙️ Persyaratan
 
 Sebelum Anda memulai pengembangan atau penggunaan aplikasi ini, pastikan Anda telah menginstal:
 
-- Node.js (v14 atau lebih baru)
-- NPM (v6 atau lebih baru)
-- PostgreSQL (v13 atau lebih baru)
-- MongoDB (v4 atau lebih baru)
+- [Node.js](https://nodejs.org/) (v14 atau lebih baru)
+- [NPM](https://www.npmjs.com/) (v6 atau lebih baru)
+- [PostgreSQL](https://www.postgresql.org/) (v13 atau lebih baru)
+- [MongoDB](https://www.mongodb.com/) (v4 atau lebih baru)
 
-## Cara Menggunakan
+## 📦 Cara Menggunakan
 
-1. Clone repositori ini ke komputer Anda:
+1. **Clone repositori ini ke komputer Anda:**
+
    ```bash
    git clone https://github.com/username/NzHotel-WebReservation-MERN-Sequelize.git
+
 2. Pindah ke direktori proyek:
    ```bash
    cd NzHotel-WebReservation-MERN-Sequelize
@@ -68,6 +72,6 @@ Kami sangat menghargai kontribusi dari komunitas. Jika Anda ingin berkontribusi 
 ## Lisensi
 Proyek ini dilisensikan di bawah Lisensi MIT. Lihat file LISENSI untuk informasi lebih lanjut.
 
-# Terima kasih telah menggunakan NzHotel Web Reservation! Kami berharap Anda menemukan aplikasi ini berguna. Jika Anda memiliki pertanyaan atau masalah, jangan ragu untuk menghubungi kami atau laporkan masalah.
+Terima kasih telah menggunakan NzHotel Web Reservation! Kami berharap Anda menemukan aplikasi ini berguna. Jika Anda memiliki pertanyaan atau masalah, jangan ragu untuk menghubungi kami atau laporkan masalah.
 
 Pastikan untuk menggantikan "username" dengan nama pengguna GitHub Anda dan menambahkan tautan kontak Anda jika perlu. Selain itu, pastikan untuk menyertakan panduan instalasi yang jelas dan panduan kontribusi yang ramah. Selamat berkontribusi dan mengembangkan proyek Anda!
