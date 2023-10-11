@@ -1,6 +1,4 @@
-<p align="center">
   ![Beranda](https://github.com/ValenNz/NzHotel-WebReservation-MERN-Sequelize/assets/92833376/3672edab-9db0-4896-972e-5cdf04ba3d96)
-</p>
 
 <h1 align="center">NzHotel Web Reservation (MERN & Sequelize)</h1>
 
