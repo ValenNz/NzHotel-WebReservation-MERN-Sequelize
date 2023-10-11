@@ -71,7 +71,7 @@ Sebelum Anda memulai pengembangan atau penggunaan aplikasi ini, pastikan Anda te
     
 Aplikasi akan berjalan di http://localhost:3000.
 
-👥 Kontribusi
+## 👥 Kontribusi
 Kami sangat menghargai kontribusi dari komunitas. Jika Anda ingin berkontribusi pada proyek ini, silakan ikuti langkah-langkah berikut:
 
 ## Fork repositori ini.
@@ -80,7 +80,7 @@ Kami sangat menghargai kontribusi dari komunitas. Jika Anda ingin berkontribusi 
 - Push ke branch Anda: git push origin fitur-anda.
 - Buat permintaan tarik (Pull Request) ke repositori utama.
   
-📜 Lisensi
+## 📜 Lisensi
 Proyek ini dilisensikan di bawah Lisensi MIT. Lihat file LISENSI untuk informasi lebih lanjut.
 
 Terima kasih telah menggunakan NzHotel Web Reservation! Kami berharap Anda menemukan aplikasi ini berguna. Jika Anda memiliki pertanyaan atau masalah, jangan ragu untuk menghubungi kami atau laporkan masalah.
