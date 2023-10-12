@@ -89,7 +89,7 @@ Aplikasi server akan berjalan di http://localhost:5173.
 ## 👥 Kontribusi
 Kami sangat menghargai kontribusi dari komunitas. Jika Anda ingin berkontribusi pada proyek ini, silakan ikuti langkah-langkah berikut:
 
-## Fork repositori ini.
+## 📂 Fork repositori ini.
 - Buat branch fitur atau perbaikan Anda: git checkout -b fitur-anda.
 - Commit perubahan Anda: git commit -m 'Menambahkan fitur baru'.
 - Push ke branch Anda: git push origin fitur-anda.
