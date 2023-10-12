@@ -58,9 +58,9 @@ Sebelum Anda memulai pengembangan atau penggunaan aplikasi ini, pastikan Anda te
    npm install
    
 5. Konfigurasi basis data:
-    - folder backend
-    - folder config
-    - sesuaikan database :
+    -> folder backend
+      -> folder config
+        -> sesuaikan database :
                 "development":
                     {
                       "nama_user": "root",
