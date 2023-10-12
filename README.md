@@ -58,9 +58,9 @@ Sebelum Anda memulai pengembangan atau penggunaan aplikasi ini, pastikan Anda te
    npm install
    
 5. Konfigurasi basis data:
-    -> folder backend
-      -> folder config
-        -> sesuaikan database :
+    - folder backend
+    - folder config
+    - sesuaikan database :
                 "development":
                     {
                       "nama_user": "root",
@@ -69,23 +69,22 @@ Sebelum Anda memulai pengembangan atau penggunaan aplikasi ini, pastikan Anda te
                       "host": "127.0.0.1",
                       "dialect": "mysql"
                     },
-   Salin contoh file konfigurasi basis data:
-   config.js
-  Isi informasi basis data Anda di config.js.
   
-6. Inisialisasi basis data dan jalankan migras
+6. Inisialisasi basis data dan jalankan migrasI (folder backend)
    
     ```bash
-    cd server
-    npm run sequelize
-
-7. Kembali ke direktori akar proyek dan jalankan server dan client:
+    cd backend
+    npx sequelize-cli db:migrate
+  
+7. Kembali ke direktori akar proyek dan jalankan server dan client: (folder frontend)
    
     ```bash
-    Copy code
+    cd frontend
+    cd admin / client
     npm run dev
     
-Aplikasi akan berjalan di http://localhost:3000.
+Aplikasi server akan berjalan di http://localhost:8000.
+Aplikasi server akan berjalan di http://localhost:5173.
 
 ## 👥 Kontribusi
 Kami sangat menghargai kontribusi dari komunitas. Jika Anda ingin berkontribusi pada proyek ini, silakan ikuti langkah-langkah berikut:
