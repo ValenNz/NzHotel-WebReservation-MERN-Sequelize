@@ -22,7 +22,7 @@ Selamat datang di proyek **NzHotel Web Reservation**! Proyek ini adalah aplikasi
 ## ⚙️ Persyaratan
 
 Sebelum Anda memulai pengembangan atau penggunaan aplikasi ini, pastikan Anda telah menginstal:
-
+- [React.js](https://react.dev/) (18.2.0 atau lebih baru)
 - [Node.js](https://nodejs.org/) (v14 atau lebih baru)
 - [NPM](https://www.npmjs.com/) (v6 atau lebih baru)
 - [PostgreSQL](https://www.postgresql.org/) (v13 atau lebih baru)
