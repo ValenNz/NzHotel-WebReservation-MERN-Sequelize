@@ -43,30 +43,43 @@ Sebelum Anda memulai pengembangan atau penggunaan aplikasi ini, pastikan Anda te
 3. Instal dependensi server:
    
    ```bash
-   cd server
+   cd backend
    npm install
    
 4. Instal dependensi client:
    
    ```bash
-   cd client
+   cd frontend
+   cd admin
+   npm install
+
+   cd frontend 
+   cd customer
    npm install
    
 5. Konfigurasi basis data:
-   
+    - folder backend
+    - folder config
+    - sesuaikan database :
+                "development":
+                    {
+                      "nama_user": "root",
+                      "password": null,
+                      "database": "your_name_database",
+                      "host": "127.0.0.1",
+                      "dialect": "mysql"
+                    },
    Salin contoh file konfigurasi basis data:
-   ```bash
-   cd server
-   cp config.example.js config.js
+   config.js
   Isi informasi basis data Anda di config.js.
   
-7. Inisialisasi basis data dan jalankan migras
+6. Inisialisasi basis data dan jalankan migras
    
     ```bash
     cd server
     npm run sequelize
 
-8. Kembali ke direktori akar proyek dan jalankan server dan client:
+7. Kembali ke direktori akar proyek dan jalankan server dan client:
    
     ```bash
     Copy code
