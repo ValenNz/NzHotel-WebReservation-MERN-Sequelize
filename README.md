@@ -4,9 +4,13 @@
 
 <h1 align="center">Portofolio Saya</h1>
 
-<div align="center">
-  <strong>Portofolio pribadi saya yang mencerminkan perjalanan saya sebagai pengembang web.</strong>
-</div>
+  <p align="center" >
+    <a href="https://drive.google.com/drive/folders/1P4tu4G5NDYuhfhLdXR0bqn9BPBCAJ2BA?usp=sharing"><span style="color: #faa935;">Preview Project di Google Drive</span></a>
+  </p>
+
+<h1 align="center">NzHotel Web Reservation (MERN & Sequelize)</h1>
+
+Selamat datang di proyek **NzHotel Web Reservation**! Proyek ini adalah aplikasi web reservasi hotel yang dibangun menggunakan teknologi MERN (MongoDB, Express, React, Node.js) serta Sequelize sebagai ORM (Object-Relational Mapping). Aplikasi ini memungkinkan pengguna untuk mencari, memilih, dan memesan kamar hotel dengan mudah.
 
 <br>
 
@@ -19,13 +23,7 @@
 <h1 align="center">Preview Project</h1>
 
   ![Beranda](https://github.com/ValenNz/NzHotel-WebReservation-MERN-Sequelize/assets/92833376/3672edab-9db0-4896-972e-5cdf04ba3d96)
-  <p align="center" >
-    <a href="https://drive.google.com/drive/folders/1P4tu4G5NDYuhfhLdXR0bqn9BPBCAJ2BA?usp=sharing"><span style="color: #faa935;">Preview Project di Google Drive</span></a>
-  </p>
 
-<h1 align="center">NzHotel Web Reservation (MERN & Sequelize)</h1>
-
-Selamat datang di proyek **NzHotel Web Reservation**! Proyek ini adalah aplikasi web reservasi hotel yang dibangun menggunakan teknologi MERN (MongoDB, Express, React, Node.js) serta Sequelize sebagai ORM (Object-Relational Mapping). Aplikasi ini memungkinkan pengguna untuk mencari, memilih, dan memesan kamar hotel dengan mudah.
 
 ## 🚀 Fitur Utama
 
