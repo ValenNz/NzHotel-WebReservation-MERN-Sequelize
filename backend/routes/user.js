@@ -82,49 +82,56 @@ app.get("/:id", auth, (req, res) =>{
     })
 })
 
-app.put("/:id", upload.single("foto"), auth, (req, res) =>{
-    let param = { id_user: req.params.id}
+app.put("/:id", upload.single("foto"), auth, (req, res) => {
+    let param = { id_user: req.params.id }
     let data = {
-        nama_user : req.body.nama_user,
-        email : req.body.email,
-        role : req.body.role
+        nama_user: req.body.nama_user,
+        email: req.body.email,
+        role: req.body.role
     }
+
     if (req.file) {
-        const row = user.findOne({where: param})
-        .then(result => {
-            let oldFileName = result.image
-           
-            let dir = path.join(__dirname,"../backend/image/user",oldFileName)
-            fs.unlink(dir, err => console.log(err))
-        })
-        .catch(error => {
-            console.log(error.message);
-        })
+        const row = user.findOne({ where: param })
+            .then(result => {
+                let oldFileName = result.image
+                let dir = path.join(__dirname, "../backend/image/user", oldFileName)
+                fs.unlink(dir, err => console.log(err))
+            })
+            .catch(error => {
+                console.log(error.message);
+            })
 
         data.foto = req.file.filename
     }
 
-    if(req.body.password){
-        data.password = md5(req.body.password)
+    // Cek apakah ada input password dari pengguna
+    if (req.body.password) {
+        data.password = md5(req.body.password);
     }
 
-    user.update(data, {where: param})
-    .then(result => {
-        if (result[0] === 0) {
-            return res.status(404).json({
-                message: "Data not found"
+    // Menghapus properti password dari objek data jika tidak ada input password
+    if (!req.body.password) {
+        delete data.password;
+    }
+
+    user.update(data, { where: param })
+        .then(result => {
+            if (result[0] === 0) {
+                return res.status(404).json({
+                    message: "Data not found"
+                });
+            }
+            res.json({
+                message: "data has been updated",
             });
-        }
-        res.json({
-            message: "data has been updated",
         })
-    })
-    .catch(error => {
-        res.json({
-            message: error.message
-        })
-    })
-})
+        .catch(error => {
+            res.json({
+                message: error.message
+            });
+        });
+});
+
 
 app.delete("/:id", auth,  (req,res) => {
     let param = {
@@ -132,6 +139,7 @@ app.delete("/:id", auth,  (req,res) => {
     }
     user.destroy({where: param})
         .then(result => {
+            
             res.json({
                 message: "data has been deleted"
             })

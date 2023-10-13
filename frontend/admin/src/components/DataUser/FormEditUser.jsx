@@ -79,6 +79,13 @@ const FormEditUser = () => {
     }
   }
 
+  useEffect(() => {
+    const userRole = sessionStorage.getItem('role');
+    if (userRole !== 'admin') {
+      // Jika bukan admin, arahkan kembali ke halaman yang sesuai (misalnya, dataPemesanan)
+      navigate('/dataPemesanan');
+    }
+  }, [navigate]);
 
   return (
     <div className="flex flex-col p-8 stroke-box mt-14 w-full">
@@ -133,11 +140,9 @@ const FormEditUser = () => {
             </label>
             <input
               onChange={(e) => setPassword(e.target.value)}
-              // value={password}
-              type=""
+              type="text"
               name="checkIn"
               placeholder="Masukkan Password"
-              required
               className="bg-form p-4 border-r-[16px] border-r-[#f6f6f6] mt-2"
             ></input>
           </div>

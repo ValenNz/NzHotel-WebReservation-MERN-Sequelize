@@ -65,6 +65,13 @@ const FormEditDataKamar = () => {
         })
       }
     //   console.log(outletExst)
+    useEffect(() => {
+        const userRole = sessionStorage.getItem('role');
+        if (userRole !== 'admin') {
+          // Jika bukan admin, arahkan kembali ke halaman yang sesuai (misalnya, dataPemesanan)
+          navigate('/dataPemesanan');
+        }
+      }, [navigate]);
 
   return (
     <div className='flex flex-col p-8 stroke-box mt-14 w-full'>

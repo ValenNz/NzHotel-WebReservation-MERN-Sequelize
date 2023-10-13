@@ -53,6 +53,13 @@ const FormTambahDataKamar = () => {
         }
       }
 
+      useEffect(() => {
+        const userRole = sessionStorage.getItem('role');
+        if (userRole !== 'admin') {
+          // Jika bukan admin, arahkan kembali ke halaman yang sesuai (misalnya, dataPemesanan)
+          navigate('/dataPemesanan');
+        }
+      }, [navigate]);
 
   return (
     <div className='flex flex-col p-8 stroke-box mt-14 w-full'>
@@ -68,7 +75,7 @@ const FormTambahDataKamar = () => {
             <div className='flex justify-between mt-4'>
                 <div className='w-1/2 flex flex-col mb-4'>
                     <label htmlFor="checkIn" className='text-gray'>Nama Tipe Kamar</label>
-                    <input onChange={(e) => setNamaTipeKamar(e.target.value)} value={tipeKamar} type="text" name='checkIn' placeholder='Masukkan Harga' className="bg-form p-4 border-r-[16px] border-r-[#f6f6f6] mt-2" />
+                    <input onChange={(e) => setNamaTipeKamar(e.target.value)} value={tipeKamar} type="text" name='checkIn' placeholder='Masukkan Nama Tipe Kamar' className="bg-form p-4 border-r-[16px] border-r-[#f6f6f6] mt-2" />
                 </div>
                 <div className='w-1/2 flex flex-col mb-4 ml-5'>
                     <label htmlFor="checkIn" className='text-gray'>Harga</label>

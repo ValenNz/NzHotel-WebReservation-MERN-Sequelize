@@ -17,7 +17,6 @@ const ListKamar = ({ data }) => {
       <div className="flex justify-between">
         <div className="">
           <h1 className="text-xl font-medium">Rekomendasi Tipe Kamar Terbaik!</h1>
-          <p className="text-sm text-gray">Iki Ngko Breadcrumbs</p>
         </div>
       </div>
 

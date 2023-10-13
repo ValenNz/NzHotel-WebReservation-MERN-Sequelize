@@ -50,12 +50,14 @@ const Form = () => {
   }
 
   return (
-    <div className="flex flex-col p-20">
+    <div className="flex flex-col p-10">
       <div className="w-[550px]">
-        <img className="h-[52px]" src={logo} alt="" />
-        <div className="flex flex-col mt-14">
-          <h1 className="text-4xl font-bold primary-text">Selamat Datang!</h1>
-          <p className="text-base text-gray mt-4">
+      <div className="flex flex-col items-center justify-center">
+        <img className="h-[160px]" src={logo} alt="" />
+      </div>
+        <div className="flex flex-col mt-2">
+          <h1 className="text-4xl font-bold primary-text text-center">Selamat Datang!</h1>
+          <p className="text-base text-gray mt-4 text-center mb-2">
             Buat Akun untuk mengakses fitur yang telah tersedia pada website
             kami!
           </p>
@@ -134,7 +136,7 @@ const Form = () => {
           </p>
         </form>
 
-        <p className="text-gray mt-14">© Nebula Zing2023 - All Rights Reserved </p>
+        <p className="text-gray text-center mt-4">© Nebula Zing2023 - All Rights Reserved </p>
       </div>
     </div>
   );

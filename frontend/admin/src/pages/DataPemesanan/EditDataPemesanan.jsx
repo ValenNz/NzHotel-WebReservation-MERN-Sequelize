@@ -13,18 +13,18 @@ const EditDataPemesanan = () => {
       </div>
 
       <div className='w-full mx-5'>
-      <div className={`bg-white  w-full`}>
-        <div className="w-full text-xl">
-          <FormEditStatus />
+        <div className={`bg-white  w-full`}>
+          <div className="w-full text-xl">
+            <FormEditStatus />
+          </div>
         </div>
-      </div>
 
-      <div className={`gray-bg mt-12 ${styles.paddingX} ${styles.flexCenter} `}>
-        <div className={`${styles.boxWidth} `}>
-          <Footer />
-        </div>
-      </div>  
-    </div>
+        <div className={`gray-bg mt-12 ${styles.paddingX} ${styles.flexCenter} `}>
+          <div className={`${styles.boxWidth} `}>
+            <Footer />
+          </div>
+        </div>  
+      </div>
     </div>
   )
 }

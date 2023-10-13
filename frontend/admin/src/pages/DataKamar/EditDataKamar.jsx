@@ -5,24 +5,26 @@ import { FormEditDataKamar } from "../../components/DataKamar";
 
 const EditDataKamar = () => {
   return (
-    <div className="bg-white w-full overflow-hidden">
-      <div className={`${styles.paddingX} ${styles.flexCenter}`}>
+    <div className="bg-white w-full overflow-hidden flex"> 
+      <div className={`px-2 w-3/12`}>
         <div className={`${styles.boxWidth}`}>
           <Sidebar />
         </div>
       </div>
 
-      <div className={`bg-white ${styles.paddingX} ${styles.flexStart}`}>
-        <div className={`${styles.boxWidth}`}>
+      <div className='w-full mx-5'>
+      <div className={`bg-white  w-full`}>
+        <div className="w-full text-xl">
           <FormEditDataKamar />
         </div>
       </div>
 
-      <div className={`gray-bg mt-20  ${styles.paddingX} ${styles.flexCenter}`}>
-        <div className={`${styles.boxWidth} fixed bottom-0`}>
+      <div className={`gray-bg mt-12 ${styles.paddingX} ${styles.flexCenter} `}>
+        <div className={`${styles.boxWidth} `}>
           <Footer />
         </div>
-      </div>
+      </div>  
+    </div>
     </div>
   );
 };

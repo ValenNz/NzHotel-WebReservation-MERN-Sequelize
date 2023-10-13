@@ -112,6 +112,14 @@ const Table = () => {
     setCurrentPage(pageNumber);
   };
 
+  useEffect(() => {
+    const userRole = sessionStorage.getItem('role');
+    if (userRole !== 'admin') {
+      // Jika bukan admin, arahkan kembali ke halaman yang sesuai (misalnya, dataPemesanan)
+      navigate('/dataPemesanan');
+    }
+  }, [navigate]);
+  
   return (
     <div className="p-4 mt-14 ">
       <div className="flex items-center justify-between">
