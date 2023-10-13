@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/ValenNz/MyProfile.github.io/blob/main/gambar/Logo.png" alt="Logo Proyek" width="200">
+  <img src="https://github.com/ValenNz/NzHotel-WebReservation-MERN-Sequelize/blob/main/frontend/admin/src/assets/logo.png" alt="Logo Proyek" width="200">
 </p>
 
 <h1 align="center">Portofolio Saya</h1>
