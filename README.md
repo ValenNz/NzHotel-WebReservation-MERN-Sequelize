@@ -1,3 +1,21 @@
+<p align="center">
+  <img src="https://github.com/ValenNz/MyProfile.github.io/blob/main/gambar/Logo.png" alt="Logo Proyek" width="200">
+</p>
+
+<h1 align="center">Portofolio Saya</h1>
+
+<div align="center">
+  <strong>Portofolio pribadi saya yang mencerminkan perjalanan saya sebagai pengembang web.</strong>
+</div>
+
+<br>
+
+<p align="center">
+  <a href="https://github.com/USERNAME/REPO"><strong>Terlihat sangat bagus? Berikan Bintang ⭐</strong></a>
+</p>
+
+<br>
+
 <h1 align="center">Preview Project</h1>
 
   ![Beranda](https://github.com/ValenNz/NzHotel-WebReservation-MERN-Sequelize/assets/92833376/3672edab-9db0-4896-972e-5cdf04ba3d96)
