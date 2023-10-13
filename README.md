@@ -2,8 +2,6 @@
   <img src="https://github.com/ValenNz/NzHotel-WebReservation-MERN-Sequelize/blob/main/frontend/admin/src/assets/logo.png" alt="Logo Proyek" width="200">
 </p>
 
-<h1 align="center">Portofolio Saya</h1>
-
 <h1 align="center">NzHotel Web Reservation (MERN & Sequelize)</h1>
 
 Selamat datang di proyek **NzHotel Web Reservation**! Proyek ini adalah aplikasi web reservasi hotel yang dibangun menggunakan teknologi MERN (MongoDB, Express, React, Node.js) serta Sequelize sebagai ORM (Object-Relational Mapping). Aplikasi ini memungkinkan pengguna untuk mencari, memilih, dan memesan kamar hotel dengan mudah.
